@@ -1,0 +1,34 @@
+{
+  "requires": {
+    "[hybrid]": {
+      "db": {
+        "binding": {
+          "type": "cf",
+          "apiEndpoint": "https://api.cf.us10-001.hana.ondemand.com",
+          "org": "d2b16e58trial",
+          "space": "dev",
+          "instance": "xsuaa-project-db",
+          "key": "xsuaa-project-db-key"
+        },
+        "kind": "hana",
+        "vcap": {
+          "name": "db"
+        }
+      },
+      "auth": {
+        "binding": {
+          "type": "cf",
+          "apiEndpoint": "https://api.cf.us10-001.hana.ondemand.com",
+          "org": "d2b16e58trial",
+          "space": "dev",
+          "instance": "xsuaa-project-instance",
+          "key": "xsuaa-project-key"
+        },
+        "kind": "xsuaa-auth",
+        "vcap": {
+          "name": "auth"
+        }
+      }
+    }
+  }
+}
